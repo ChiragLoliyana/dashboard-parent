@@ -25,4 +25,31 @@
 		<module>dashboard-controller</module>
 		<module>dashboard</module>
 	</modules>
+
+	<profiles>
+		<profile>
+			<id>local</id>
+			<activation>
+				<property>
+					<name>env</name>
+					<value>local</value>
+				</property>
+			</activation>
+			<properties>
+				<domain.server.group>local-server-group</domain.server.group>
+			</properties>
+		</profile>
+		<profile>
+			<id>prod</id>
+			<activation>
+				<property>
+					<name>env</name>
+					<value>prod</value>
+				</property>
+			</activation>
+			<properties>
+				<domain.server.group>prod-server-group</domain.server.group>
+			</properties>
+		</profile>
+	</profiles>
 </project>
