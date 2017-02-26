@@ -23,7 +23,9 @@
 	<modules>
 		<module>dashboardWeb</module>
 		<module>dashboard-controller</module>
+		<module>dashboard-service</module>
 		<module>dashboard</module>
+		<module>dashboard-dao</module>
 	</modules>
 
 	<profiles>
