@@ -17,7 +17,7 @@ import org.springframework.orm.jpa.vendor.HibernateJpaVendorAdapter;
 import org.springframework.transaction.PlatformTransactionManager;
 
 @Configuration
-@EnableJpaRepositories
+@EnableJpaRepositories(basePackages={"com.dashboard.repository"})
 public class DashbaordDBConfiguration {
 
 	@Bean
